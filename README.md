@@ -8,6 +8,6 @@ resonator the pwm frequency will be 62.5KHz.
 
 check out src/ffso.c for an IO map.
 
-build: ```make clean && make all```
-flash: ```make program```
-fuses: ```-U lfuse:w:0xef:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m```
+ * build: ```make clean && make all```
+ * flash: ```make program```
+ * fuses: ```-U lfuse:w:0xef:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m```
