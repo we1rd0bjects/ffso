@@ -76,12 +76,12 @@ int main(void) {
     TIMSK |= (1 << TOIE0);  /* Timer0: overflow interrupt enable */
 
     /* Enable sleep; sleep mode is idle */
-	MCUCR |= (1 << SE);
-	MCUCR &= ~(1 << SM1);
+    MCUCR |= (1 << SE);
+    MCUCR &= ~(1 << SM1);
 
-	sei();
+    sei();
 
     /* Sleep forever, everything's handled by interrupts */
-	while (1) __asm__ __volatile__ ("sleep");
-	return 42;
+    while (1) __asm__ __volatile__ ("sleep");
+    return 42;
 }
